@@ -198,4 +198,15 @@ public class RunCucumberTest {
         Assertions.assertEquals("Göteborg-arkiv | IT-Högskolan", filterTitle, "Title does not match");
     }
 
+    @When("I click for Students button")
+    public void i_click_for_students_button() {
+        WebElement forStudents_button = driver.findElement(By.id("nav-frstuderande"));
+        forStudents_button.click();
+    }
+    @Then("I should be navigated to Your IT career starts here page")
+    public void i_should_be_navigated_to_your_it_career_starts_here_page() {
+        String forStudentsTitle = driver.getTitle();
+        Assertions.assertEquals("Your IT career starts here |  IT University", forStudentsTitle, "Title does not match");
+    }
+
 }
