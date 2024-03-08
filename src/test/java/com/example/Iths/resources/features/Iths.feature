@@ -44,3 +44,7 @@ Feature: Iths
     When I click the news button
     Then the filter options will be displayed, I filter it to gothenberg
     And i should get gothenberg news
+
+  Scenario: Click on for students Button
+    When I click for Students button
+    Then I should be navigated to Your IT career starts here page
