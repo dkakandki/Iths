@@ -10,9 +10,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    branches: "main" 
   pull_request:
-    branches: [ "main" ]
+    branches: "main"
 
 jobs:
   build_and_test:
@@ -35,7 +35,7 @@ jobs:
         wget https://storage.googleapis.com/chrome-for-testing-public/122.0.6261.111/linux64/chromedriver-linux64.zip
         unzip chromedriver-linux64.zip
         cd chromedriver-linux64
-        chmod +x chromedriver-linux64/chromedriver
+        chmod +x chromedriver
         sudo mv chromedriver /usr/local/bin
         
     - name: Build and test with Maven
