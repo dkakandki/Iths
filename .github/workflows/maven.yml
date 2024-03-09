@@ -31,6 +31,6 @@ jobs:
         sudo mv chromedriver /usr/local/bin
         
     - name: Build and test with Maven
-      run: mvn -B clean verify -DskipTests=false -Dwedriver.chrome.driver=/usr/local/bin/chromedriver
+      run: mvn test
 
     
